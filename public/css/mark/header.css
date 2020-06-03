@@ -1,0 +1,38 @@
+header {
+  height: 100vh;
+  color: white;
+  transform: scale(1.025);
+}
+
+#two-content > header > img {
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+
+  background-color: black;
+}
+
+#header-two-content {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#header-two-text {
+  padding: 2%;
+  margin-top: 10%;
+  margin-left: 4%;
+}
+
+#two-nav {
+  background-color: black;
+  color: white;
+  position: fixed;
+  top: 0;
+
+  width: 100vw;
+  border-radius: 0;
+  z-index: 100;
+
+  height: 7.5vh;
+}

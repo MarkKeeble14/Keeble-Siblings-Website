@@ -1,0 +1,112 @@
+.title-container {
+    display: flex;
+    padding: 2%;
+    margin: 2%;
+  }
+
+  #landing-heading {
+    display: block;
+    width: 100%;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    z-index: 200;
+  }
+  
+  #side-select {
+    display: flex;
+    height: 100%;
+  
+    overflow: hidden;
+    background-color: black;
+  }
+  
+  .side-select-img {
+    width: 100%;
+  }
+  
+  #jenna-side {
+    clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+    background-color: red;
+    width: 100%;
+  }
+  
+  #mark-side {
+    clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
+    background-color: blue;
+    width: 100%;
+  }
+  
+  .side {
+    height: 100%;
+    transition: all .5s ease-in-out;
+  
+    cursor: pointer;
+  }
+  
+  .side:hover {
+    transform: scale(1.25);
+    transition: all .5s ease-in-out;
+  }
+  
+  #jenna-side.slide-over {
+    flex-grow: 4;
+    transition: all .5s ease-in;
+  }
+  
+  #mark-side.slide-away {
+    flex-shrink: 2;
+    transform: translateX(100%);
+    transition: all .5s ease-in;
+  }
+  
+  #mark-side.slide-over {
+    flex-grow: 4;
+    transform: translateX(20%), scale(1.25);
+    transition: all .5s ease-in;
+  }
+  
+  #jenna-side.slide-away {
+    flex-shrink: 2;
+    transform: translateX(-100%);
+    transition: all .5s ease-in;
+  }
+
+  #button-wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    
+    position: fixed;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+    
+    width: fit-content;
+  }
+  
+  .btn {
+    cursor: pointer;
+    font-size: 24px;
+    font-family: Lato, sans-serif;
+  
+    width: fit-content;
+    margin: 2%;
+    margin-right: 5%;
+    margin-left: 5%;
+  
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    transition: all .25s ease-in;
+  
+    z-index: 200;
+  }
+  
+  .btn:hover {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    transition: all .25s ease-in;
+  }

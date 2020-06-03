@@ -1,0 +1,35 @@
+#footer {
+  padding-left: 40%;
+  padding-right: 40%;
+  text-align: center;
+  
+  background-image: url(http://api.thumbr.it/whitenoise-361x370.png?background=ffffffff&noise=4d4d4d&density=15&opacity=17);
+
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+#emailLine {
+  font-size: 0.9em;
+}
+
+#footerGrid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin: 0 auto;
+  width: 60%;
+
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.footerGridIMG {
+  position: relative;
+  filter: brightness(0);
+
+  width: 50%;
+}
+
+.footerGridIMG:hover {
+  filter: brightness(1);
+}
