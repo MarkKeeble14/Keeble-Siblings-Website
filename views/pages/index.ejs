@@ -86,6 +86,7 @@
         </p>
       </div>
       <div id="page-2" class="page inactive-display">
+        <a name='two-page-start'></a>
         <nav class="navbar navbar-inverse" id='two-nav'>
           <div class="container-fluid">
             <div class="navbar-header">
@@ -94,11 +95,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#" id='two-home-name'>Mark Keeble</a>
+              <a class="navbar-brand" id='two-home-name'>Mark Keeble</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
               <ul class="nav navbar-nav">
-                <li><a href="#" id='two-about-me-anchor'>About</a></li>
+                <li><a id='two-about-me-anchor'>About</a></li>
+                <li><a href='files/Resume.pdf' target="_blank" id='two-about-me-anchor'>Resume</a></li>
                 <li class="dropdown">
                   <a class="dropdown-toggle" data-toggle="dropdown" href="#">Updates
                   <span class="caret"></span></a>
@@ -232,7 +234,7 @@
         </div>
         <div id='two-updates' class="two-updates-inactive">
           <div id='two-updates-container'>
-            <div id='two-updates-select-catagory'>
+            <div id='two-updates-select-catagory' class="inactive-display">
               <button>Software Development</button>
               <button>Game Design and Development</button>
               <button>Music Production</button>
@@ -334,6 +336,8 @@
         $('#two-updates').on('click', function() {
           if ($('#two-updates').hasClass('two-updates-inactive')) {
             $('#two-updates').removeClass('two-updates-inactive');
+            $('#two-updates-select-catagory').removeClass('inactive-display');
+            $('#two-updates-select-catagory').addClass('active-display');
           }
         });
 
@@ -349,6 +353,15 @@
         $('#two-about-me-anchor').on('click', function() {
           scrollToAnchor('two-about-me');
           $('#two-updates').addClass('two-updates-inactive');
+          $('#two-updates-select-catagory').addClass('inactive-display');
+          $('#two-updates-select-catagory').removeClass('active-display');
+        });
+
+        $('#two-home-name').on('click', function() {
+          scrollToAnchor('two-page-start');
+          $('#two-updates').addClass('two-updates-inactive');
+          $('#two-updates-select-catagory').addClass('inactive-display');
+          $('#two-updates-select-catagory').removeClass('active-display');
         });
       });
     </script>

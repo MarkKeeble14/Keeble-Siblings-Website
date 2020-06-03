@@ -17,17 +17,17 @@ body {
 .inactive-display {
     opacity: 0;
     pointer-events: none;
-    transition: all .25s ease-in-out;
-}
-
-.display-off {
-    display: none;
+    transition: all .75s ease-in-out;
 }
 
 .active-display {
     opacity: 1;
     pointer-events: all;
-    transition: all .25s ease-in-out;
+    transition: all .75s ease-in-out;
+}
+
+.display-off {
+    display: none;
 }
  
 .no-mouse-interaction {

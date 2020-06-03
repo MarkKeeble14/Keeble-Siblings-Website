@@ -36,3 +36,11 @@ header {
 
   height: 7.5vh;
 }
+
+#two-home-name {
+  cursor: pointer;
+}
+
+#two-about-me-anchor {
+  cursor: pointer;
+}
